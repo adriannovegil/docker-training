@@ -1,0 +1,24 @@
+db:
+  build: ./mongo
+  command: mongod --rest --httpinterface --smallfiles
+  ports:
+    - "27017:27017"
+  restart: always
+
+rest:
+  build: ./rest
+  command: /data/docker-maven-tomcat/run.sh
+  ports:
+    - "8080:8080"
+  links:
+    - db
+
+web:
+  build: ./web
+  command: /data/docker-python/run.sh
+  ports:
+    - "8000:8000"
+  environment:
+   - VMHOST=127.0.0.1
+  links:
+   - rest

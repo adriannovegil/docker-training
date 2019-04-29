@@ -1,0 +1,73 @@
+[
+    {
+        "_id": "54c6eeeec61391ed2764fb5a",
+        "CustomerID": "BOTTM",
+        "CompanyName": "Bottom-Dollar Markets",
+        "ContactName": "Elizabeth Lincoln",
+        "ContactTitle": "Accounting Manager",
+        "Address": "23 Tsawassen Blvd.",
+        "City": "Tsawassen",
+        "Region": "BC",
+        "PostalCode": "T2F 8M4",
+        "Country": "Canada",
+        "Phone": "(604) 555-4729",
+        "Fax": "(604) 555-3745"
+    },
+    {
+        "_id": "54c6eeeec61391ed2764fb5b",
+        "CustomerID": "BSBEV",
+        "CompanyName": "B's Beverages",
+        "ContactName": "Victoria Ashworth",
+        "ContactTitle": "Sales Representative",
+        "Address": "Fauntleroy Circus",
+        "City": "London",
+        "Region": "NULL",
+        "PostalCode": "EC2 5NT",
+        "Country": "UK",
+        "Phone": "(171) 555-1212",
+        "Fax": "NULL"
+    },
+    {
+        "_id": "54c6eeeec61391ed2764fb5c",
+        "CustomerID": "CACTU",
+        "CompanyName": "Cactus Comidas para llevar",
+        "ContactName": "Patricio Simpson",
+        "ContactTitle": "Sales Agent",
+        "Address": "Cerrito 333",
+        "City": "Buenos Aires",
+        "Region": "NULL",
+        "PostalCode": "1010",
+        "Country": "Argentina",
+        "Phone": "(1) 135-5555",
+        "Fax": "(1) 135-4892"
+    },
+    {
+        "_id": "54c6eeeec61391ed2764fb5d",
+        "CustomerID": "CENTC",
+        "CompanyName": "Centro comercial Moctezuma",
+        "ContactName": "Francisco Chang",
+        "ContactTitle": "Marketing Manager",
+        "Address": "Sierras de Granada 9993",
+        "City": "MÃ©xico D.F.",
+        "Region": "NULL",
+        "PostalCode": "5022",
+        "Country": "Mexico",
+        "Phone": "(5) 555-3392",
+        "Fax": "(5) 555-7293"
+    },
+    {
+        "_id": "54c6eeeec61391ed2764fb5e",
+        "CustomerID": "CHOPS",
+        "CompanyName": "Chop-suey Chinese",
+        "ContactName": "Yang Wang",
+        "ContactTitle": "Owner",
+        "Address": "Hauptstr. 29",
+        "City": "Bern",
+        "Region": "NULL",
+        "PostalCode": "3012",
+        "Country": "Switzerland",
+        "Phone": "0452-076545",
+        "Fax": "NULL"
+    }
+
+]
