@@ -8,7 +8,7 @@
 		http://www.springframework.org/schema/data/mongo http://www.springframework.org/schema/data/mongo/spring-mongo.xsd">
 
 
-    <mongo:mongo host="#{systemEnvironment['DB_PORT_27017_TCP_ADDR']}" port="27017" id="test">
+    <mongo:mongo host="db" port="27017" id="test">
         <mongo:options connections-per-host="8"
                        threads-allowed-to-block-for-connection-multiplier="4"
                        connect-timeout="1000"
@@ -25,7 +25,7 @@
     <mongo:db-factory dbname="Northwind" mongo-ref="mongo" id="mongoDbFactory" />
 
     <bean id="mongo" class="org.springframework.data.mongodb.core.MongoFactoryBean">
-        <property name="host" value="#{systemEnvironment['DB_PORT_27017_TCP_ADDR']}"/>
+        <property name="host" value="db"/>
     </bean>
 
     <!--<bean id="mongo" class="org.springframework.data.mongodb.core.MongoFactoryBean">

@@ -22,5 +22,4 @@ docker build -t eg_python-web .
 #
 # Commands:
 #     docker exec -i -t ae419e5dd0c2 /bin/bash
-#docker run -t -i --rm eg_python-web /opt/webserver/run.sh /logs
-docker run --rm eg_python-web /opt/webserver/run.sh /logs
+docker run -ti -p 8080:8080 --rm eg_python-web /opt/webserver/run.sh /logs

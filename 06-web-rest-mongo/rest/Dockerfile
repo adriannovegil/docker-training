@@ -7,6 +7,8 @@ FROM java:7
 MAINTAINER Adrian Novegil "adrian.novegil@gmail.com"
 
 # Update packages and install maven
+RUN printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
+
 RUN  \
   export DEBIAN_FRONTEND=noninteractive && \
   sed -i 's/# \(.*multiverse$\)/\1/g' /etc/apt/sources.list && \

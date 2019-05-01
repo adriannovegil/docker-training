@@ -21,4 +21,4 @@ docker build -t eg_postgresql .
 #                     then the image is pulled from the public image registry Docker
 #                     Hub.
 #
-docker run --rm -p 127.0.0.1:32770:5432 eg_postgresql
+docker run -ti -p 5432:5432 --rm  eg_postgresql

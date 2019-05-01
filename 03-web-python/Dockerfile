@@ -14,6 +14,9 @@ ADD files/webserver.py /opt/webserver/webserver.py
 ADD files/run.sh /opt/webserver/run.sh
 ADD files/index.html /opt/webserver/index.html
 
+RUN chmod +x /opt/webserver/webserver.py
+RUN chmod +x /opt/webserver/run.sh
+
 # Define de volume to store logs.
 VOLUME logs
 

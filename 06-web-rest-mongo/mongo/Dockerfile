@@ -1,7 +1,7 @@
 #
 # MongoDB database Dockerfile.
 #
-FROM ubuntu
+FROM ubuntu:14.04
 
 # Maintainer details
 MAINTAINER Adrian Novegil "adrian.novegil@gmail.com"

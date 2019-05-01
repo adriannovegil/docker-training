@@ -1,18 +1,22 @@
-web:
-  build: ./nodejs/
-  ports:
-    - "5000:5000"
-  volumes:
-    - "./nodejs:/src/app"
+version: '3.7'
 
-nginx:
-  restart: always
-  build: ./nginx/
-  ports:
-    - "80:80"
-  volumes:
-    - /www/public
-  volumes_from:
-    - web
-  links:
-    - web:web
+services:
+
+  # Web
+  web:
+    build: ./nodejs/
+    ports:
+      - "5000:5000"
+    volumes:
+      - "./nodejs:/src/app"
+
+  # Nginx
+  nginx:
+    restart: always
+    build: ./nginx/
+    ports:
+      - "80:80"
+    volumes:
+      - /www/public
+    links:
+      - web:web

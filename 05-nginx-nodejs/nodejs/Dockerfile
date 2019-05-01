@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y \
 # Get the latest node.js and npm versions and install
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get update && apt-get install -y \
-	nodejs
+	nodejs npm
 RUN apt-get install -y build-essential
 
 # Copy source code
